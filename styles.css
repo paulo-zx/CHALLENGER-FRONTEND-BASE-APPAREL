@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.container1{
+    width: 60%;
+    height: 100vh;
+    background: url(./images/bg-pattern-desktop.svg);
+    display: flex;
+    flex-direction:column;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.logo{
+    width: 150px;
+    height: 70px;
+    background: transparent;
+}
+
+.imagem-logo{
+    background-position: center ;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container2{
+    width: 40%;
+    height: 100vh;
+    background: green;
+}
+
+.imagem{
+    width: 100%;
+    height: 100vh;
+    background-position: center ;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+h1{
+    
+    font-size: 90px;
+    text-transform: uppercase;
+}
+
+.h1-1{
+    padding-top: 30px;
+    color: hsl(0, 36%, 70%);
+    letter-spacing: 1rem;
+    font-weight: 100;
+}
+
+p{
+    padding-top: 15px;
+    color: hsl(0, 36%, 70%);
+    width: 500px;
+}
+
+.c2{
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    border-color:hsl(0, 80%, 86%);
+    color: blue;
+   
+}
+
+.email01{
+    width: 400px;
+    border-radius: 1rem;
+    height: 50px;
+    padding-left: 20px;
+    border: 2px solid hsl(0, 80%, 86%);
+    outline: none;
+    color: hsl(0, 80%, 86%);
+}
+
+.email01::placeholder{
+    color: hsl(0, 80%, 86%);
+}
+
+.buttom{
+    width: 80px;
+    height: 50px;
+    border-radius: 7rem;
+    background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    margin-left: -70px;
+    cursor: pointer;
+    
+}
+
+.arrow{
+    margin-left: 35px;
+    margin-top: 15px;
+    background-position: center ;
+    background-size: cover;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}
+
+.btn-error{
+    width: 180px;
+    margin-left: -170px;
+}
+
+.btn-error2{
+    margin-left: 55px;
+    margin-top: 13px;
+    background-position: center ;
+    background-size: cover;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.email-error{
+    display: none;
+}
+
+/* JS*/
+
+.block{
+    display: block;
+}
+
+.efc{
+    color: rgb(57, 241, 57);
+}
+
+.efc2{
+    color: red;
+}
+
+/* RESPONSIVE*/
+
+@media(max-width:1440px){
+   .container1{
+    width: 55%;
+   }
+   .container2{
+    width:50%;
+   }
+}
+
+@media(max-width:1080px){
+    p{
+        padding: 13px;
+        margin: 13px;
+    }
+}
+
+@media(max-width:1050px){
+    body{
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container1{
+        width: 100%;
+        align-items:center ;
+        justify-content: center;
+        text-align: center;
+        padding-left: 20px;  
+        
+        height: 900px;
+    }
+
+    .arrow{
+        margin-right: 35px;
+    }
+    
+    .container2{
+        width:100%;
+        height: 200px;
+        z-index: 2;
+        height: 10px;
+        margin-top: 100px;
+        position: absolute;
+    }
+
+    .imagem{
+        width: 100%;
+        height: 200px;
+    }
+
+    .logo{
+        margin-bottom: 350px;
+        margin-right: 750px;
+    }
+
+
+}
+
+@media(max-width:900px){
+    .logo{
+        margin-right: 650px;
+    }
+}
+
+@media(max-width:800px){
+    .logo{
+        margin-right: 550px;
+    }
+}
+
+@media(max-width:720px){
+    .logo{
+        margin-bottom: 300px;
+    }
+}
+
+@media(max-width:680px){
+    .logo{
+        margin-bottom: 260px;
+        margin-right: 500px;
+    }
+}
+
+@media(max-width:660px){
+    .logo{
+        margin-bottom: 280px;
+        margin-right: 400px;
+    }
+}
+
+
+
+@media(max-width:530px){
+
+    body{
+        width: 530px;
+        margin-left: 1px;
+    }
+
+    .imagem{
+        width: 530px;
+    }
+    
+    .logo{
+        margin-right: 300px;
+    }
+
+    
+}
+
+@media(max-width:500px){
+
+    body{
+        width: 500px;
+        margin-left: 1px;
+    }
+
+    .imagem{
+        width: 500px;
+    }
+   
+}
+
+@media(max-width:480px){
+
+    body{
+        width: 480px;
+    }
+
+    .imagem{
+        width: 500px;
+    }
+   
+}
+
+@media(max-width:375px){
+
+    body{
+        width: 375px;
+    }
+
+    .imagem{
+        width: 400px;
+    }
+   
+}
